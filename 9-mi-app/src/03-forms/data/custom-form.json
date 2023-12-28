@@ -1,0 +1,211 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "Diego",
+        "label": "First Name",
+        "value": "asd",
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            },
+            {
+                "type":"minLength",
+                "value":3,
+                "message":"This field must have at least 3 characters"
+            },
+            {
+                "type":"maxLength",
+                "value":10,
+                "message":"This field must have at most 10 characters"
+            },
+            {
+                "type":"pattern",
+                "value":"^[a-zA-Z]+$",
+                "message":"This field must have only letters"
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Maradona",
+        "label": "Last Name",
+        "value": "",
+        
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            },
+            {
+                "type":"minLength",
+                "value":3,
+                "message":"This field must have at least 3 characters"
+            },
+            {
+                "type":"maxLength",
+                "value":10,
+                "message":"This field must have at most 10 characters"
+            },
+            {
+                "type":"pattern",
+                "value":"^[a-zA-Z]+$",
+                "message":"This field must have only letters"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "example@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            },
+            {
+                "type":"pattern",
+                "value":"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$",
+                "message":"This field must have a valid email"
+            }
+        ]
+    },
+    {
+        "type": "password",
+        "name": "password",
+        "placeholder": "********",
+        "label": "Password",
+        "value": "",
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            },
+            {
+                "type":"minLength",
+                "value":6,
+                "message":"This field must have at least 6 characters"
+            },
+            {
+                "type":"maxLength",
+                "value":10,
+                "message":"This field must have at most 10 characters"
+            },
+            {
+                "type":"pattern",
+                "value":"^[a-zA-Z0-9]+$",
+                "message":"This field must have only letters and numbers"
+            }
+        ]
+    },
+    {
+        "type": "password",
+        "name": "password2",
+        "placeholder": "********",
+        "label": "Password",
+        "value": "",
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            },
+            {
+                "type":"mustMatch",
+                "value":"password",
+                "message":"This field must match with password"
+            }
+        ]
+    },
+
+    {
+        "type": "select",
+        "name": "country",
+        "placeholder": "Argentina",
+        "label": "Country",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "value": "Argentina",
+                "label": "Argentina"
+            },
+            {
+                "id": 2,
+                "value": "Brazil",
+                "label": "Brazil"
+            },
+            {
+                "id": 3,
+                "value": "Chile",
+                "label": "Chile"
+            },
+            {
+                "id": 4,
+                "value": "Colombia",
+                "label": "Colombia"
+            },
+            {
+                "id": 5,
+                "value": "Ecuador",
+                "label": "Ecuador"
+            },
+            {
+                "id": 6,
+                "value": "Paraguay",
+                "label": "Paraguay"
+            },
+            {
+                "id": 7,
+                "value": "Peru",
+                "label": "Peru"
+            },
+            {
+                "id": 8,
+                "value": "Uruguay",
+                "label": "Uruguay"
+            },
+            {
+                "id": 9,
+                "value": "Venezuela",
+                "label": "Venezuela"
+            }
+        ],
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            }
+        ]
+    },
+    {
+        "type": "checkbox",
+        "name": "terms",
+        "placeholder": "",
+        "label": "I accept the terms and conditions",
+        "value": "",
+        "validations":[
+            {
+                "type":"required",
+                "message":"This field is required"
+            }
+        ]
+    },
+    {
+        "type": "button",
+        "name": "reset",
+        "placeholder": "",
+        "label": "Submit",
+        "value": ""
+    },
+    {
+        "type": "button",
+        "name": "submit",
+        "placeholder": "",
+        "label": "Submit",
+        "value": ""
+    }
+]
